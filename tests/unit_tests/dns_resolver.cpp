@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2017, The Monero Project
+// Copyright (c) 2014-2017, The SL8 Project
 // 
 // All rights reserved.
 // 
@@ -140,20 +140,20 @@ TEST(DNSResolver, GetTXTRecord)
 {
   bool avail, valid;
 
-  std::vector<std::string> records = tools::DNSResolver::instance().get_txt_record("donate.getmonero.org", avail, valid);
+  std::vector<std::string> records = tools::DNSResolver::instance().get_txt_record("donate.getSL8.org", avail, valid);
 
   EXPECT_NE(0, records.size());
 
   for (auto& rec : records)
   {
-    std::cout << "TXT record for donate.getmonero.org: " << rec << std::endl;
+    std::cout << "TXT record for donate.getSL8.org: " << rec << std::endl;
   }
 
   // replace first @ with .
-  std::string addr = tools::DNSResolver::instance().get_dns_format_from_oa_address("donate@getmonero.org");
-  EXPECT_STREQ("donate.getmonero.org", addr.c_str());
+  std::string addr = tools::DNSResolver::instance().get_dns_format_from_oa_address("donate@getSL8.org");
+  EXPECT_STREQ("donate.getSL8.org", addr.c_str());
 
   // no change
-  addr = tools::DNSResolver::instance().get_dns_format_from_oa_address("donate.getmonero.org");
-  EXPECT_STREQ("donate.getmonero.org", addr.c_str());
+  addr = tools::DNSResolver::instance().get_dns_format_from_oa_address("donate.getSL8.org");
+  EXPECT_STREQ("donate.getSL8.org", addr.c_str());
 }

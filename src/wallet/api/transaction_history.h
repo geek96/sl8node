@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2017, The Monero Project
+// Copyright (c) 2014-2017, The SL8 Project
 //
 // All rights reserved.
 //
@@ -31,7 +31,7 @@
 #include "wallet/wallet2_api.h"
 #include <boost/thread/shared_mutex.hpp>
 
-namespace Monero {
+namespace SL8 {
 
 class WalletImpl;
 
@@ -56,5 +56,5 @@ private:
 
 }
 
-namespace Bitmonero = Monero;
+namespace BitSL8 = SL8;
 

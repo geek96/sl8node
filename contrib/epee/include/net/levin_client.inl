@@ -31,8 +31,8 @@
 //------------------------------------------------------------------------------
 #include "string_tools.h"
 
-#undef MONERO_DEFAULT_LOG_CATEGORY
-#define MONERO_DEFAULT_LOG_CATEGORY "net"
+#undef SL8_DEFAULT_LOG_CATEGORY
+#define SL8_DEFAULT_LOG_CATEGORY "net"
 
 namespace epee
 {

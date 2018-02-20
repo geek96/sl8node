@@ -72,8 +72,8 @@ RUN curl -s -O https://www.openssl.org/source/openssl-${OPENSSL_VERSION}.tar.gz 
     && make build_crypto build_ssl \
     && cd .. && mv openssl-${OPENSSL_VERSION}  openssl
 
-RUN git clone https://github.com/monero-project/monero.git \
-    && cd monero \
+RUN git clone https://github.com/SL8-project/SL8.git \
+    && cd SL8 \
     && mkdir -p build/release \
     && cd build/release \
     && CC=clang CXX=clang++ \

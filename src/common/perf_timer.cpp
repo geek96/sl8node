@@ -1,4 +1,4 @@
-// Copyright (c) 2016, The Monero Project
+// Copyright (c) 2016, The SL8 Project
 // 
 // All rights reserved.
 // 
@@ -28,8 +28,8 @@
 
 #include "perf_timer.h"
 
-#undef MONERO_DEFAULT_LOG_CATEGORY
-#define MONERO_DEFAULT_LOG_CATEGORY "perf"
+#undef SL8_DEFAULT_LOG_CATEGORY
+#define SL8_DEFAULT_LOG_CATEGORY "perf"
 
 namespace tools
 {

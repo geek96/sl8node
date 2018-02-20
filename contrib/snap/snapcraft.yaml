@@ -1,31 +1,31 @@
-name: monero
+name: SL8
 version: 0.10.2-1
-summary: "Monero: the secure, private, untraceable cryptocurrency https://getmonero.org"
+summary: "SL8: the secure, private, untraceable cryptocurrency https://getSL8.org"
 description: |
-    Monero is a private, secure, untraceable, decentralised digital currency.
+    SL8 is a private, secure, untraceable, decentralised digital currency.
     You are your bank, you control your funds, and nobody can trace your transfers
     unless you allow them to do so.
 grade: devel
 confinement: strict
 
 apps:
-    monerod:
+    SL8d:
         daemon: forking
         command: |
-          monerod-wrapper --detach --data-dir ${SNAP_COMMON} --config-file ${SNAP_USER_DATA}/etc/monerod.conf
+          SL8d-wrapper --detach --data-dir ${SNAP_COMMON} --config-file ${SNAP_USER_DATA}/etc/SL8d.conf
         plugs:
             - network
             - network-bind
-    monero-wallet-rpc:
+    SL8-wallet-rpc:
         command: |
-          monero-wallet-rpc --log-file ${SNAP_USER_DATA}
+          SL8-wallet-rpc --log-file ${SNAP_USER_DATA}
         plugs:
             - home
             - network
             - network-bind
-    monero-wallet-cli:
+    SL8-wallet-cli:
         command: |
-          monero-wallet-cli --log-file ${SNAP_USER_DATA}
+          SL8-wallet-cli --log-file ${SNAP_USER_DATA}
         plugs:
             - home
             - network
@@ -68,8 +68,8 @@ parts:
         plugin: dump
         source: .
         organize:
-            contrib/snap/monerod.conf: etc/monerod.conf
-            contrib/snap/monerod-wrapper: bin/monerod-wrapper
+            contrib/snap/SL8d.conf: etc/SL8d.conf
+            contrib/snap/SL8d-wrapper: bin/SL8d-wrapper
         prime:
             - etc
             - bin

@@ -1,8 +1,8 @@
 /// @file
-/// @author rfree (current maintainer in monero.cc project)
+/// @author rfree (current maintainer in SL8.cc project)
 /// @brief interface for throttling of connection (count and rate-limit speed etc)
 
-// Copyright (c) 2014-2017, The Monero Project
+// Copyright (c) 2014-2017, The SL8 Project
 // 
 // All rights reserved.
 // 

@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2017, The Monero Project
+// Copyright (c) 2014-2017, The SL8 Project
 // 
 // All rights reserved.
 // 
@@ -1094,7 +1094,7 @@ namespace Language
       "mokadi",
       "molaro",
       "momento",
-      "monero",
+      "cleansl",
       "mopso",
       "mordi",
       "moskito",

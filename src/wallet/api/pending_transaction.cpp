@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2017, The Monero Project
+// Copyright (c) 2014-2017, The SL8 Project
 //
 // All rights reserved.
 //
@@ -42,7 +42,7 @@
 
 using namespace std;
 
-namespace Monero {
+namespace SL8 {
 
 PendingTransaction::~PendingTransaction() {}
 
@@ -174,5 +174,5 @@ uint64_t PendingTransactionImpl::txCount() const
 
 }
 
-namespace Bitmonero = Monero;
+namespace BitSL8 = SL8;
 

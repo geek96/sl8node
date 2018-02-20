@@ -1,4 +1,4 @@
-# Copyright (c) 2014-2017, The Monero Project
+# Copyright (c) 2014-2017, The SL8 Project
 #
 # All rights reserved.
 #
@@ -33,7 +33,7 @@ endif()
 
 cmake_minimum_required(VERSION 2.8.7)
 
-project(monero)
+project(SL8)
 
 function (die msg)
   if (NOT WIN32)
@@ -108,7 +108,7 @@ set(CMAKE_C_FLAGS_RELEASE "-DNDEBUG ${OPT_FLAGS_RELEASE}")
 set(CMAKE_CXX_FLAGS_RELEASE "-DNDEBUG ${OPT_FLAGS_RELEASE}")
 
 # set this to 0 if per-block checkpoint needs to be disabled
-set(PER_BLOCK_CHECKPOINT 1)
+set(PER_BLOCK_CHECKPOINT 0)
 
 if(PER_BLOCK_CHECKPOINT)
   add_definitions("-DPER_BLOCK_CHECKPOINT")
@@ -237,7 +237,7 @@ if(STATIC)
 endif()
 
 # Set default blockchain storage location:
-# memory was the default in Cryptonote before Monero implimented LMDB, it still works but is unneccessary.
+# memory was the default in Cryptonote before SL8 implimented LMDB, it still works but is unneccessary.
 # set(DATABASE memory)
 set(DATABASE lmdb)
 

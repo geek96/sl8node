@@ -1,4 +1,4 @@
-// Copyright (c) 2014-2017, The Monero Project
+// Copyright (c) 2014-2017, The SL8 Project
 //
 // All rights reserved.
 //
@@ -42,7 +42,7 @@
 
 using namespace epee;
 
-namespace Monero {
+namespace SL8 {
 
 TransactionHistory::~TransactionHistory() {}
 
@@ -237,4 +237,4 @@ void TransactionHistoryImpl::refresh()
 
 } // namespace
 
-namespace Bitmonero = Monero;
+namespace BitSL8 = SL8;

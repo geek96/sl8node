@@ -1,4 +1,4 @@
-# Copyright (c) 2014-2017, The Monero Project
+# Copyright (c) 2014-2017, The SL8 Project
 #
 # All rights reserved.
 #
@@ -48,9 +48,9 @@ set(mnemonics_private_headers
   spanish.h
   esperanto.h)
 
-monero_private_headers(mnemonics
+SL8_private_headers(mnemonics
   ${mnemonics_private_headers})
-monero_add_library(mnemonics
+SL8_add_library(mnemonics
   ${mnemonics_sources}
   ${mnemonics_headers}
   ${mnemonics_private_headers})

@@ -1,4 +1,4 @@
-// Copyright (c) 2017, The Monero Project
+// Copyright (c) 2017, The SL8 Project
 // 
 // All rights reserved.
 // 
@@ -31,8 +31,8 @@
 #include "dns_utils.h"
 #include "updates.h"
 
-#undef MONERO_DEFAULT_LOG_CATEGORY
-#define MONERO_DEFAULT_LOG_CATEGORY "updates"
+#undef SL8_DEFAULT_LOG_CATEGORY
+#define SL8_DEFAULT_LOG_CATEGORY "updates"
 
 namespace tools
 {
@@ -43,12 +43,12 @@ namespace tools
 
     MDEBUG("Checking updates for " << buildtag << " " << software);
 
-    // All four MoneroPulse domains have DNSSEC on and valid
+    // All four SL8Pulse domains have DNSSEC on and valid
     static const std::vector<std::string> dns_urls = {
-        "updates.moneropulse.org",
-        "updates.moneropulse.net",
-        "updates.moneropulse.co",
-        "updates.moneropulse.se"
+        "updates.SL8pulse.org",
+        "updates.SL8pulse.net",
+        "updates.SL8pulse.co",
+        "updates.SL8pulse.se"
     };
 
     if (!tools::dns_utils::load_txt_records_from_dns(records, dns_urls))
@@ -98,7 +98,7 @@ namespace tools
 
   std::string get_update_url(const std::string &software, const std::string &subdir, const std::string &buildtag, const std::string &version, bool user)
   {
-    const char *base = user ? "https://downloads.getmonero.org/" : "http://updates.getmonero.org/";
+    const char *base = user ? "https://downloads.getSL8.org/" : "http://updates.getSL8.org/";
 #ifdef _WIN32
     static const char extension[] = ".zip";
 #else

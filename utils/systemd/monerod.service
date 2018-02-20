@@ -1,17 +1,17 @@
 [Unit]
-Description=Monero Full Node
+Description=SL8 Full Node
 After=network.target
 
 [Service]
-User=monero
-Group=monero
+User=SL8
+Group=SL8
 WorkingDirectory=~
 
 Type=forking
-PIDFile=/var/run/monerod.pid
+PIDFile=/var/run/SL8d.pid
 
-ExecStart=/usr/bin/monerod --config-file /etc/monerod.conf \
-    --detach --pidfile /var/run/monerod.pid
+ExecStart=/usr/bin/SL8d --config-file /etc/SL8d.conf \
+    --detach --pidfile /var/run/SL8d.pid
 
 [Install]
 WantedBy=multi-user.target
